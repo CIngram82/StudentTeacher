@@ -48,7 +48,22 @@ public class Main {
     firstGradeClasses.put(allTeachers.get(1), firstGradeTwo);
     firstGradeClasses.put(allTeachers.get(2), firstGradeThree);
 
+//    for (int i =0; i < firstGradeClasses.size();i++ ){
+//      System.out.println(firstGradeClasses.keySet());
+//    }
+//    System.out.println(firstGradeClasses.values());
 
+//    for ( int i = 0 ; i < firstGradeClasses.keySet().size(); i++){
+//      System.out.println(firstGradeClasses.get(allTeachers.get(i)));
+//    }
+
+    for (Teacher name : firstGradeClasses.keySet()){
+      System.out.println("Teacher :" + name.getLastName() + " , " +name.getFirstName());
+    }
+    for (Set kidName : firstGradeClasses.values()){
+      System.out.println("class" + kidName);
+
+    }
   }
 
 
